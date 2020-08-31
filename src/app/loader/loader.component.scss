@@ -1,0 +1,40 @@
+.progress-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.904);
+  z-index: 1000;
+  text-align: center;
+  top: 0;
+}
+
+.progress-loader {
+  position: fixed;
+  z-index: 1000;
+  top: 60%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  color: #fff;
+}
+
+.dot {
+  background: #000040;
+}
+.dot, .dot:after {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  animation: a 1.5s calc(((var(--i) + var(--o, 0))/var(--n) - 1)*1.5s) infinite;
+}
+.dot:after {
+  --o: 1;
+  background: rgba(255, 255, 255, 0.904);
+  content: '';
+}
+@keyframes a {
+  0%, 50% {
+    transform: scale(0);
+ }
+}
