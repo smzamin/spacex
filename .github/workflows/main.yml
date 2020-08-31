@@ -1,0 +1,13 @@
+name: AngularCI-CD
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build project
+        run: |
+          npm install
+          ./node_modules/.bin/ng build --prod --baseHref="https://smzamin.github.io/spacex/"
