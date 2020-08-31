@@ -4,4 +4,4 @@ Develop a front-end application which would help users list and browse all launc
 Deploy on Github Pages
 ng build --prod --baseHref="https://smzamin.github.io/spacex/"
 
-![Alt text](https://ibb.co/swpt6YY "SpaceX")
+![Alt text](https://i.ibb.co/jM9HWXX/Opera-Snapshot-2020-08-31-191818-smzamin-github-io.png "SpaceX")
